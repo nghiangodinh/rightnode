@@ -1,6 +1,7 @@
 'use strict';
 
 const
+    /* this is changes text */
     SERVER_PORT = 5432,
     fs = require("fs"),
     net = require('net'),
