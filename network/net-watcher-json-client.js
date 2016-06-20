@@ -5,6 +5,7 @@ const
     net = require('net'),
     client = net.connect({port: SERVER_PORT});
     
+    // get data from the server
     client.on('data', function(data) {
         let message = JSON.parse(data);
 
