@@ -10,7 +10,7 @@ const
 responder.on('message', function(data) {
     // parse incoming message
     let request = JSON.parse(data);
-        console.log('Received request to get: ' + request.path);
+    console.log('Received request to get: ' + request.path);
 
     // read file and reply with content
     fs.readFile(request.path, function(err, content) {
